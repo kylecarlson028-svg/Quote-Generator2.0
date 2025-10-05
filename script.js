@@ -1,9 +1,8 @@
 const quotes = [
-  { text: "The best way to predict the future is to invent it.", author: "Alan Kay" },
-  { text: "Stay hungry, stay foolish.", author: "Steve Jobs" },
-  { text: "Do one thing every day that scares you.", author: "Eleanor Roosevelt" },
-  { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
-  { text: "You miss 100% of the shots you don’t take.", author: "Wayne Gretzky" }
+  const quotes = [
+  { text: "In the midst of chaos, there is also opportunity.", author: "Sun Tzu", topic: "war" },
+  { text: "The only thing we have to fear is fear itself.", author: "Franklin D. Roosevelt", topic: "motivation" },
+  { text: "Never think that war, no matter how necessary, nor how justified, is not a crime.", author: "Ernest Hemingway", topic: "WW1" }
 ];
 
 const quoteText = document.getElementById("quote");
