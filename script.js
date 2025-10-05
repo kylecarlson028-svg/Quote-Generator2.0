@@ -1,3 +1,4 @@
+console.log("✅ script.js loaded");
 const quotes = [
   { text: "In the midst of chaos, there is also opportunity.", author: "Sun Tzu", topic: "war" },
   { text: "The only thing we have to fear is fear itself.", author: "Franklin D. Roosevelt", topic: "motivation" },
