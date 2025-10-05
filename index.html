@@ -12,41 +12,9 @@
     <p id="quote">Click the button to get inspired!</p>
     <p id="author"></p>
     <input type="text" id="topicInput" placeholder="Enter a topic (e.g. WW1)" />
-<button id="searchQuote">Search Quote</button>
+    <button id="searchQuote">Search Quote</button>
     <button id="new-quote">New Quote</button>
   </div>
   <script src="script.js"></script>
 </body>
 </html>
-const topicInput = document.getElementById("topicInput");
-const searchQuoteButton = document.getElementById("searchQuote");
-
-searchQuoteButton.addEventListener("click", () => {
-  const topic = topicInput.value.toLowerCase();
-  const filtered = quotes.filter(q => q.topic.toLowerCase() === topic);
-  
-  if (filtered.length > 0) {
-    const random = filtered[Math.floor(Math.random() * filtered.length)];
-    quoteText.textContent = `"${random.text}"`;
-    authorText.textContent = `— ${random.author}`;
-  } else {
-    quoteText.textContent = "No quotes found for that topic.";
-    authorText.textContent = "";
-  }
-});
-const topicInput = document.getElementById("topicInput");
-const searchQuoteButton = document.getElementById("searchQuote");
-
-searchQuoteButton.addEventListener("click", () => {
-  const topic = topicInput.value.toLowerCase();
-  const filtered = quotes.filter(q => q.topic.toLowerCase() === topic);
-  
-  if (filtered.length > 0) {
-    const random = filtered[Math.floor(Math.random() * filtered.length)];
-    quoteText.textContent = `"${random.text}"`;
-    authorText.textContent = `— ${random.author}`;
-  } else {
-    quoteText.textContent = "No quotes found for that topic.";
-    authorText.textContent = "";
-  }
-});
