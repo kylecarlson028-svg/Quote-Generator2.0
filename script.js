@@ -31,4 +31,6 @@ searchQuoteButton.addEventListener("click", () => {
     authorText.textContent = `— ${found.author}`;
   } else {
     quoteText.textContent = "No quote found for that topic 😕";
-    authorText.textContent = "
+    authorText.textContent = "";
+  }
+});
