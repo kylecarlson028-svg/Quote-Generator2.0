@@ -18,4 +18,19 @@
   <script src="script.js"></script>
 </body>
 </html>
+const topicInput = document.getElementById("topicInput");
+const searchQuoteButton = document.getElementById("searchQuote");
 
+searchQuoteButton.addEventListener("click", () => {
+  const topic = topicInput.value.toLowerCase();
+  const filtered = quotes.filter(q => q.topic.toLowerCase() === topic);
+  
+  if (filtered.length > 0) {
+    const random = filtered[Math.floor(Math.random() * filtered.length)];
+    quoteText.textContent = `"${random.text}"`;
+    authorText.textContent = `— ${random.author}`;
+  } else {
+    quoteText.textContent = "No quotes found for that topic.";
+    authorText.textContent = "";
+  }
+});
