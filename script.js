@@ -13,3 +13,23 @@ newQuoteButton.addEventListener("click", () => {
   quoteText.textContent = `"${random.text}"`;
   authorText.textContent = `— ${random.author}`;
 });
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Random Quote Generator ✨</h1>
+    <p id="quote">Click the button to get inspired!</p>
+    <p id="author"></p>
+    <input type="text" id="topicInput" placeholder="Enter a topic (e.g. WW1)" />
+    <button id="searchQuote">Search Quote</button>
+    <button id="new-quote">New Quote</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
